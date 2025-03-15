@@ -10,10 +10,10 @@ export default defineConfig({
       strategy: ['url', 'cookie', 'baseLocale'],
       urlPatterns: [
         {
-          pattern: 'http://localhost:5173/:path(.*)?',
+          pattern: '/:path(.*)?',
           localized: [
-            ['en', 'http://localhost:5173/:path(.*)?'],
-            ['de', 'http://localhost:5173/de/:path(.*)?'],
+            ['en', '/:path(.*)?'],
+            ['de', '/de/:path(.*)?'],
           ],
         },
       ],
